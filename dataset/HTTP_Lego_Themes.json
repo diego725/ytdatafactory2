@@ -1,0 +1,37 @@
+{
+	"name": "HTTP_Lego_Themes",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HTTP_Rebrickable",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "themes.csv.gz"
+			},
+			"columnDelimiter": ",",
+			"compressionCodec": "gzip",
+			"compressionLevel": "Optimal",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "16",
+				"type": "String"
+			},
+			{
+				"name": "RoboRiders",
+				"type": "String"
+			},
+			{
+				"name": "1",
+				"type": "String"
+			}
+		]
+	}
+}
